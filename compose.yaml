@@ -3,7 +3,7 @@ name: canyon
 services:
   canyon:
     image: johnnymcneil/enviro-node:latest
-    container_name: canyon-environment
+    hostname: canyon
     tty: true
     stdin_open: true
     volumes:
