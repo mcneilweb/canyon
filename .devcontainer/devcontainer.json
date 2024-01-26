@@ -1,6 +1,6 @@
 {
 	"dockerComposeFile": "./compose.yaml",
 	"service": "canyon",
-	"workspaceFolder": "/workspace/canyon",
+	"workspaceFolder": "/workspace",
 	"shutdownAction": "stopCompose"
 }
