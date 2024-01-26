@@ -3,11 +3,18 @@ name: canyon
 services:
   canyon:
     image: johnnymcneil/enviro-node:latest
-    hostname: canyon
     tty: true
     stdin_open: true
+    hostname: canyon
+    networks:
+      environet:
+        aliases:
+          - canyon
     volumes:
       - canyon-workspace:/workspace
+
+networks:
+  environet:
 
 volumes:
   canyon-workspace:
