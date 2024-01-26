@@ -1,9 +1,9 @@
 version: '3.8'
-name: canyon-compose
+name: composition
 services:
   canyon:
     image: johnnymcneil/enviro-node:latest
-    container_name: canyon
+    container_name: canyon-enviro-node
     hostname: canyon
     ports:
       - "3000:3000"
