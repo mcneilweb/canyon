@@ -1,6 +1,7 @@
 {
 	"name": "canyon-environment",
 	"image": "johnnymcneil/enviro-node",
+	"runArgs": ["--network=canyon"],
 	"forwardPorts": [3000],
 	"workspaceMount": "source=canyon-workspace,target=/workspace,type=volume",
 	"workspaceFolder": "/workspace"
