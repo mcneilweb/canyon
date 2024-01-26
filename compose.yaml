@@ -1,14 +1,14 @@
 version: '3.8'
-name: composition
+name: canyon
 services:
   canyon:
     image: johnnymcneil/enviro-node:latest
-    container_name: canyon-enviro-node
-    hostname: canyon
-    ports:
-      - "3000:3000"
+    container_name: canyon-environment
+    tty: true
+    stdin_open: true
     volumes:
       - canyon-workspace:/workspace
 
 volumes:
   canyon-workspace:
+    external: true
