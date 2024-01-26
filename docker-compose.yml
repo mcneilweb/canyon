@@ -1,0 +1,10 @@
+services:
+  canyon:
+    image: johnnymcneil/enviro-node:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - canyon-workspace:/workspace
+
+volumes:
+  canyon-workspace:
