@@ -1,6 +1,5 @@
 {
-	"name": "canyon",
-	"dockerComposeFile": "../docker-compose.yml",
+	"dockerComposeFile": "./compose.yaml",
 	"service": "canyon",
 	"workspaceFolder": "/workspace/canyon",
 	"shutdownAction": "stopCompose"
